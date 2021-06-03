@@ -22,8 +22,8 @@ import '@ionic/vue/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import { defineCustomElements } from '@ionic/pwa-elements/loader';
 
+import { defineCustomElements } from '@ionic/pwa-elements/loader';
 defineCustomElements(window);
 
 const app = createApp(App)
@@ -33,4 +33,3 @@ const app = createApp(App)
 router.isReady().then(() => {
   app.mount('#app');
 });
-
