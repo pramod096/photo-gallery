@@ -2,11 +2,78 @@
   <ion-page>
     
     <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">Tab 1</ion-title>
-        </ion-toolbar>
-      </ion-header>
+      
+    <form>
+    <ion-item-group>
+      <ion-item-divider>
+        <ion-label> Background Information</ion-label>
+      </ion-item-divider>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Reporter's Name</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+    
+    <ion-item>
+    <ion-label position="floating">Incident Date & Time</ion-label>
+    <ion-datetime display-format="MMM DD, YYYY HH:mm" placeholder="Select Date & Time"></ion-datetime>
+    </ion-item>
+
+    </ion-item-group>
+
+  
+
+    <ion-item lines="full">
+      <ion-label position="floating">Mobile</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <!-- Radio buttons -->
+    <ion-radio-group lines="full">
+      <ion-list-header>
+        <ion-label>Gender</ion-label>
+      </ion-list-header>
+
+      <ion-item>
+        <ion-label>Male</ion-label>
+        <ion-radio slot="start" value="male" checked></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Female</ion-label>
+        <ion-radio slot="start" value="female"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+
+    <!-- Checkboxes -->
+    <ion-list lines="full">
+      <ion-list-header>
+        <ion-label>Subjects</ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-label>English</ion-label>
+        <ion-checkbox></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label>Maths</ion-label>
+        <ion-checkbox></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label>Science</ion-label>
+        <ion-checkbox></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label>History</ion-label>
+        <ion-checkbox></ion-checkbox>
+      </ion-item>
+    </ion-list>
+
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="danger" expand="block">Submit</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
     
       
     </ion-content>
@@ -14,10 +81,10 @@
 </template>
 
 <script lang="ts">
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
+import { IonItem, IonItemDivider, IonItemGroup, IonPage, IonContent } from '@ionic/vue';
 
 export default  {
   name: 'Tab1',
-  components: { IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
+  components: { IonItem, IonItemDivider, IonItemGroup, IonContent, IonPage }
 }
 </script>
