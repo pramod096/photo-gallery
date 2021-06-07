@@ -6,7 +6,7 @@
     <form>
     <ion-item-group>
       <ion-item-divider>
-        <ion-label> Background Information</ion-label>
+        <ion-label>Background Information</ion-label>
       </ion-item-divider>
 
     <ion-item lines="full">
@@ -14,19 +14,21 @@
       <ion-input type="text" required></ion-input>
     </ion-item>
     
-    <ion-item>
+    <ion-item lines="full">
     <ion-label position="floating">Incident Date & Time</ion-label>
-    <ion-datetime display-format="MMM DD, YYYY HH:mm" placeholder="Select Date & Time"></ion-datetime>
+    <ion-datetime display-format="MMM DD, YYYY HH:mm"></ion-datetime>
     </ion-item>
 
     </ion-item-group>
 
-  
+  <ion-item-group>
+    <ion-item-divider>
+<ion-label>Involved Parties</ion-label>
+    </ion-item-divider>
 
-    <ion-item lines="full">
-      <ion-label position="floating">Mobile</ion-label>
-      <ion-input type="text" required></ion-input>
-    </ion-item>
+    
+</ion-item-group>
+   
 
     <!-- Radio buttons -->
     <ion-radio-group lines="full">
