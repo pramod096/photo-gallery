@@ -4,7 +4,7 @@ http://ionicframework.com/docs/theming/ */
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
-  --ion-color-primary: #3880ff;
+  --ion-color-primary: #006747;
   --ion-color-primary-rgb: 56, 128, 255;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
@@ -76,6 +76,7 @@ http://ionicframework.com/docs/theming/ */
   --ion-color-light-tint: #f5f6f9;
 }
 
+
 @media (prefers-color-scheme: dark) {
   /*
    * Dark Colors
@@ -83,7 +84,7 @@ http://ionicframework.com/docs/theming/ */
    */
 
   body {
-    --ion-color-primary: #428cff;
+    --ion-color-primary: #006747;
     --ion-color-primary-rgb: 66,140,255;
     --ion-color-primary-contrast: #ffffff;
     --ion-color-primary-contrast-rgb: 255,255,255;
@@ -145,8 +146,11 @@ http://ionicframework.com/docs/theming/ */
     --ion-color-light-contrast-rgb: 255,255,255;
     --ion-color-light-shade: #1e2023;
     --ion-color-light-tint: #383a3e;
+
+   
   }
 
+  
   /*
    * iOS Dark Theme
    * -------------------------------------------
@@ -234,3 +238,27 @@ http://ionicframework.com/docs/theming/ */
     --ion-card-background: #1e1e1e;
   }
 }
+
+.rounded{
+  --border-radius: 6px;
+  margin: 0 8px;
+ 
+}
+
+ion-card {
+  --background: var( --ion-color-light-tint, #ff4961);
+}
+
+.titles {
+     --ion-item-background: var(--ion-color-light-tint, #ff4961);
+}
+
+
+ion-button {
+  --border-radius: 6px;
+}
+
+ion-back-button {
+  --color: #ffffff
+}
+

@@ -1,0 +1,180 @@
+<template>
+  <ion-page>
+    <ion-header>
+    <ion-back-button  mode="md" default-href="/tabs/tab2"></ion-back-button>
+  </ion-header>
+  <ion-content :fullscreen="true">
+    <div class="center">
+        <h3>Report Details</h3>
+      </div>
+    <ion-grid fixed="{true}">
+      <ion-row>
+        <ion-col size="6">
+          <div>IncidentID</div>
+        </ion-col>
+        <ion-col size="6">
+          <div>1231</div>
+        </ion-col>
+      </ion-row>
+       <ion-row>
+        <ion-col size="6">
+          <div>Reporter Name</div>
+        </ion-col>
+        <ion-col size="6">
+          <div>Sam</div>
+        </ion-col>
+      </ion-row>
+       <ion-row>
+        <ion-col size="6">
+          <div>Phone</div>
+        </ion-col>
+        <ion-col size="6">
+          <div>9848932251</div>
+        </ion-col>
+      </ion-row>
+       <ion-row>
+        <ion-col size="6">
+          <div>Email</div>
+        </ion-col>
+        <ion-col size="6">
+          <div>Sam@Gmail.com</div>
+        </ion-col>
+      </ion-row>
+       <ion-row>
+        <ion-col size="6">
+          <div>Name</div>
+        </ion-col>
+        <ion-col size="6">
+          <div>Recreation</div>
+        </ion-col>
+      </ion-row>
+       <ion-row>
+        <ion-col size="6">
+          <div>Role</div>
+        </ion-col>
+        <ion-col size="6">
+          <div>Witness</div>
+        </ion-col>
+      </ion-row> <ion-row>
+        <ion-col size="6">
+          <div>Phone Number</div>
+        </ion-col>
+        <ion-col size="6">
+          <div>6602167896</div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <div>Email</div>
+        </ion-col>
+        <ion-col size="6">
+          <div>john@gmail.com</div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <div>Place of Incident</div>
+        </ion-col>
+        <ion-col size="6">
+          <div>Foster fitness</div>
+        </ion-col>
+      </ion-row>   
+      <ion-row>
+        <ion-col size="6">
+          <div>Incident Date & Time</div>
+        </ion-col>
+        <ion-col size="6">
+          <div>June 20, 2021 16:08</div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <div>Description</div>
+        </ion-col>
+        <ion-col size="6">
+          <div>Brief Explanation of the report</div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <div>RaisedOn</div>
+        </ion-col>
+        <ion-col size="6">
+          <div>01/3/2021</div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <div>User</div>
+        </ion-col>
+        <ion-col size="6">
+          <div>S453454</div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <div>Comments</div>
+        </ion-col>
+        <ion-col col-auto>
+          <div>Comment 1</div>
+          <div>Comment 2</div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <div>Status</div>
+        </ion-col>
+        <ion-col size="6">
+          <div>Open</div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+</ion-page>
+</template>
+
+<script lang="ts">
+import { IonRow, IonGrid, IonCol, IonContent, IonPage, IonBackButton } from "@ionic/vue";
+import { defineComponent } from "vue";
+import IonHeader from "@/semantics/IonHeader.vue";
+
+export default defineComponent({
+  components: {
+    IonRow,
+    IonGrid,
+    IonCol,
+    IonContent,
+    IonHeader,
+    IonPage,
+    IonBackButton,
+  },
+});
+</script>
+
+<style scoped>
+ion-grid:not(.rclass) {
+  --ion-grid-column-padding: 10px;
+  border-collapse: collapse;
+  border-style: hidden;
+}
+ion-row-first-child:not(.rclass) {
+  background-color: #2dd36f;
+  font-weight: bold;
+}
+ion-col:not(.cclass) {
+  border: 1px solid black;
+  border-bottom: 0;
+  border-right: 0;
+}
+ion-col:last-child:not(.cclass) {
+  border-right: 1px solid black;
+}
+
+ion-row:last-child:not(.rclass) {
+  border-bottom: 1px solid black;
+}
+
+.center {
+  text-align: center;
+}
+</style>
